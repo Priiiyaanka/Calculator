@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- this is the parent div containing all the content -->
+<div class="par"> 
+    <div class="calculator">
+        <input class="inputdisp" type="text" id="display" disabled>
+        <div class="buttons">
+<!-- below are the calci buttons -->
+            <button class="grey" onclick="appendToDisplay('1')">1</button>
+            <button class="grey"  onclick="appendToDisplay('2')">2</button>
+            <button class="grey"  onclick="appendToDisplay('3')">3</button>
+            <button class="Orange" onclick="appendToDisplay('+')">+</button>
+            <button class="grey" onclick="appendToDisplay('4')">4</button>
+            <button class="grey" onclick="appendToDisplay('5')">5</button>
+            <button class="grey" onclick="appendToDisplay('6')">6</button>
+            <button class="Orange" onclick="appendToDisplay('-')">-</button>
+            <button class="grey" onclick="appendToDisplay('7')">7</button>
+            <button class="grey" onclick="appendToDisplay('8')">8</button>
+            <button class="grey" onclick="appendToDisplay('9')">9</button>
+            <button class="Orange" onclick="appendToDisplay('*')">*</button>
+            <button id="len2" class="grey" onclick="appendToDisplay('0')">0</button>
+            <button  class="grey" onclick="appendToDisplay('.')">.</button>
+            <button class="Orange" onclick="appendToDisplay('/')">/</button>
+            <button id="len" onclick="clearDisplay()">C</button>
+            <button id="len1" class="Orange" onclick="calculate()">=</button>
+            
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
